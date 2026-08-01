@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Успех — спортивно-танцевальная студия в Воронеже</title>
+  <meta name="description" content="Студия «Успех» в Воронеже на Артамонова 22Б: эстрадный танец для детей от 3 лет, ОФП, выступления и аэробика для взрослых. Пробное занятие бесплатно.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Успех — спортивно-танцевальная студия | Воронеж">
+  <meta property="og:description" content="Детская хореография от 3 лет, подготовка к выступлениям и аэробика для взрослых. Артамонова 22Б. Запись по телефону и в Telegram.">
+  <meta property="og:locale" content="ru_RU">
+  <!-- TODO: заменить og:image на фото студии -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1508807526345-15e9b5f27c3d?auto=format&fit=crop&w=1200&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231F3A5F'/%3E%3Ccircle cx='24' cy='28' r='9' fill='%23FF8A5B'/%3E%3Ccircle cx='40' cy='38' r='10' fill='%235EC4B6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1f2a37;
+      --ink-soft: #314155;
+      --navy: #1f3a5f;
+      --coral: #ff8a5b;
+      --coral-deep: #e86435;
+      --mint: #5ec4b6;
+      --mint-deep: #2f8f84;
+      --sand: #fff6ef;
+      --cream: #fffaf6;
+      --muted: #667686;
+      --line: rgba(31, 42, 55, 0.12);
+      --white: #ffffff;
+      --shadow: 0 20px 48px rgba(31, 58, 95, 0.14);
+      --radius: 22px;
+      --container: 1120px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --header-offset: 34px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Nunito", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 480px at 0% 0%, rgba(255, 138, 91, 0.22), transparent 55%),
+        radial-gradient(760px 420px at 100% 5%, rgba(94, 196, 182, 0.2), transparent 50%),
+        linear-gradient(180deg, #fffaf6 0%, var(--sand) 45%, #f3ebe4 100%);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    :focus-visible {
+      outline: 3px solid var(--coral-deep);
+      outline-offset: 3px;
+    }
+
+    .container { width: min(100% - 2rem, var(--container)); margin-inline: auto; }
+
+    .demo-banner {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--navy); color: #f4f7fb;
+      text-align: center; font-size: 0.82rem; font-weight: 800;
+      padding: 0.55rem 1rem;
+    }
+    .demo-banner span { color: var(--mint); }
+
+    .site-header {
+      position: sticky; top: var(--header-offset); z-index: 900;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 250, 246, 0.88);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+    }
+    .site-header.is-scrolled {
+      border-bottom-color: var(--line);
+      box-shadow: 0 10px 28px rgba(31, 42, 55, 0.06);
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+
+    .logo {
+      display: inline-flex; align-items: center; gap: .7rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 700; letter-spacing: -.02em; font-size: 1.25rem;
+    }
+    .logo-mark {
+      width: 42px; height: 42px; border-radius: 14px;
+      background: linear-gradient(145deg, var(--navy), #2d567f);
+      display: grid; place-items: center;
+      box-shadow: 0 10px 22px rgba(31, 58, 95, 0.25);
+    }
+    .logo-mark span {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--coral), var(--mint));
+      display: block;
+    }
+
+    .nav { display: none; align-items: center; gap: 1.15rem; }
+    .nav a { color: var(--muted); font-weight: 800; font-size: .94rem; }
+    .nav a:hover, .nav a:focus-visible { color: var(--ink); }
+
+    .header-actions { display: flex; align-items: center; gap: .6rem; }
+
+    .menu-toggle {
+      width: 46px; height: 46px; border-radius: 14px;
+      border: 1px solid var(--line); background: var(--white);
+      display: inline-grid; place-items: center; cursor: pointer; padding: 0;
+    }
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block; width: 18px; height: 2px; background: var(--ink);
+      border-radius: 2px; position: relative; transition: transform .25s var(--ease);
+    }
+    .menu-toggle span::before,
+    .menu-toggle span::after { content: ""; position: absolute; left: 0; }
+    .menu-toggle span::before { top: -6px; }
+    .menu-toggle span::after { top: 6px; }
+    .menu-toggle[aria-expanded="true"] span { background: transparent; }
+    .menu-toggle[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
+
+    .mobile-nav {
+      display: none; border-top: 1px solid var(--line);
+      background: rgba(255, 250, 246, 0.98);
+      padding: 1rem 0 1.25rem;
+    }
+    .mobile-nav.is-open { display: block; }
+    .mobile-nav nav {
+      display: grid; gap: .35rem;
+      width: min(100% - 2rem, var(--container));
+      margin-inline: auto;
+    }
+    .mobile-nav a {
+      padding: .85rem 1rem; border-radius: 14px; font-weight: 800;
+      color: var(--ink-soft);
+    }
+    .mobile-nav a:hover, .mobile-nav a:focus-visible {
+      background: rgba(255, 138, 91, 0.14);
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      min-height: 48px; padding: .8rem 1.25rem; border-radius: 999px;
+      border: 1px solid transparent; font-weight: 800; cursor: pointer;
+      transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease);
+      text-align: center;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--coral), var(--coral-deep));
+      color: #fff;
+      box-shadow: 0 14px 28px rgba(232, 100, 53, 0.28);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.86);
+      border-color: rgba(255, 255, 255, 0.5);
+      color: var(--ink);
+    }
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--ink);
+    }
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.75); }
+    .btn-tg {
+      background: #2aabee; color: #fff;
+      box-shadow: 0 14px 28px rgba(42, 171, 238, 0.28);
+    }
+    .btn-full { width: 100%; }
+    .btn-sm { min-height: 42px; padding: .65rem 1rem; font-size: .92rem; }
+
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 106px);
+      display: grid; align-items: end;
+      color: #fffaf6;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    .hero-media { position: absolute; inset: 0; z-index: -2; }
+    .hero-media img {
+      width: 100%; height: 100%; object-fit: cover;
+      transform: scale(1.04);
+      animation: heroDrift 18s var(--ease) infinite alternate;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(31, 58, 95, 0.25) 0%, rgba(31, 42, 55, 0.55) 45%, rgba(31, 42, 55, 0.9) 100%),
+        radial-gradient(700px 360px at 85% 15%, rgba(255, 138, 91, 0.28), transparent 60%);
+    }
+    .hero-inner { padding: 4.5rem 0 3.2rem; max-width: 720px; }
+    .brand-signal {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(3.1rem, 11vw, 5.8rem);
+      line-height: .92;
+      margin: 0 0 .75rem;
+      text-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+      animation: fadeUp .9s var(--ease) both;
+    }
+    .hero h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.65rem, 4.8vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      max-width: 18ch;
+      animation: fadeUp .9s var(--ease) .08s both;
+    }
+    .hero-lead {
+      margin: 0 0 1.5rem;
+      font-size: 1.05rem;
+      color: rgba(255, 250, 246, 0.92);
+      max-width: 40ch;
+      animation: fadeUp .9s var(--ease) .16s both;
+    }
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: .75rem;
+      margin-bottom: 1.35rem;
+      animation: fadeUp .9s var(--ease) .24s both;
+    }
+    .hero-meta {
+      display: flex; flex-wrap: wrap; gap: .7rem 1.1rem;
+      font-size: .92rem; font-weight: 700;
+      color: rgba(255, 250, 246, 0.88);
+      animation: fadeUp .9s var(--ease) .32s both;
+    }
+    .pill {
+      display: inline-flex; align-items: center;
+      padding: .4rem .75rem; border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    section { padding: 4.2rem 0; }
+    .section-head { max-width: 640px; margin-bottom: 2rem; }
+    .eyebrow {
+      display: inline-block;
+      font-size: .78rem; font-weight: 800; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--coral-deep);
+      margin-bottom: .55rem;
+    }
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 2.9rem);
+      line-height: 1.1; margin: 0 0 .75rem; font-weight: 700;
+    }
+    .section-head p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+    .directions-grid { display: grid; gap: 1rem; }
+    .direction {
+      position: relative;
+      padding: 1.35rem 1.35rem 1.35rem 1.5rem;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      box-shadow: 0 10px 28px rgba(31, 42, 55, 0.05);
+      overflow: hidden;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+    }
+    .direction::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+      background: linear-gradient(180deg, var(--coral), var(--mint));
+    }
+    .direction:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .direction h3 {
+      margin: 0 0 .45rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.5rem;
+    }
+    .direction p { margin: 0 0 .85rem; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .tag {
+      font-size: .78rem; font-weight: 800;
+      padding: .28rem .6rem; border-radius: 999px;
+      background: rgba(94, 196, 182, 0.18); color: var(--ink-soft);
+    }
+
+    .chooser {
+      background: linear-gradient(145deg, #27476d 0%, var(--navy) 100%);
+      color: #fffaf6;
+      border-radius: 28px;
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+    }
+    .chooser h2 { color: #fffaf6; }
+    .chooser .eyebrow { color: var(--mint); }
+    .chooser-lead { color: rgba(255, 250, 246, 0.8); margin: 0 0 1.4rem; }
+    .chooser-groups { display: grid; gap: 1.1rem; }
+    .chooser-group h3 {
+      margin: 0 0 .55rem; font-size: .9rem; font-weight: 800;
+      letter-spacing: .04em; text-transform: uppercase; color: rgba(255,250,246,.7);
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chip {
+      min-height: 42px; padding: .55rem 1rem; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.08); color: #fffaf6;
+      font-weight: 800; cursor: pointer;
+      transition: background .2s var(--ease), border-color .2s var(--ease);
+    }
+    .chip:hover, .chip:focus-visible { background: rgba(255, 255, 255, 0.14); }
+    .chip.is-active {
+      background: linear-gradient(135deg, var(--coral), var(--coral-deep));
+      border-color: transparent;
+    }
+    .chooser-result {
+      margin-top: 1.4rem; padding: 1.1rem 1.2rem;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .chooser-result strong {
+      display: block; margin-bottom: .35rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+    }
+
+    .benefits, .hours, .prices-grid, .reviews { display: grid; gap: 1rem; }
+    .benefit, .hour-card, .price-card, .review, .teacher, .branch, .schedule-box, .price-note {
+      padding: 1.35rem;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+    .benefit h3, .hour-card h3, .branch h3, .teacher h3 {
+      margin: 0 0 .45rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+    }
+    .benefit p, .hour-card p, .branch p, .teacher p, .schedule-box p, .price-note p {
+      margin: 0; color: var(--muted);
+    }
+    .branch a, .teacher a { color: var(--coral-deep); font-weight: 800; }
+
+    .teacher {
+      display: grid; gap: 1rem;
+      align-items: start;
+    }
+    .avatar {
+      width: 72px; height: 72px; border-radius: 22px;
+      display: grid; place-items: center;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem; font-weight: 700; color: #fff;
+      background: linear-gradient(145deg, var(--navy), var(--mint-deep));
+      box-shadow: 0 12px 24px rgba(31, 58, 95, 0.2);
+    }
+
+    .schedule-actions, .price-actions, .hero-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+    .schedule-box p, .price-note p { margin: 0 0 .85rem; }
+
+    .price-card.is-featured {
+      background: linear-gradient(160deg, #27476d, var(--navy));
+      color: #fffaf6; border-color: transparent;
+    }
+    .price-card.is-featured p { color: rgba(255, 250, 246, 0.8); }
+    .price-card h3 {
+      margin: 0 0 .35rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.45rem;
+    }
+    .price-value {
+      font-size: 1.7rem; font-weight: 800; margin: 0 0 .45rem;
+      color: var(--coral-deep);
+    }
+    .price-card.is-featured .price-value { color: #ffd1b8; }
+    .price-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .gallery {
+      display: grid; gap: .75rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .gallery figure {
+      margin: 0; border-radius: 20px; overflow: hidden;
+      position: relative; min-height: 160px;
+      background: var(--navy);
+    }
+    .gallery img {
+      width: 100%; height: 100%; object-fit: cover; min-height: 160px;
+      transition: transform .6s var(--ease);
+    }
+    .gallery figure:hover img { transform: scale(1.05); }
+    .gallery figure:first-child { grid-column: 1 / -1; min-height: 220px; }
+    .gallery figure:first-child img { min-height: 220px; }
+
+    .review blockquote {
+      margin: 0 0 .9rem; color: var(--ink-soft); font-size: 1.02rem;
+    }
+    .review footer {
+      font-size: .9rem; color: var(--muted);
+    }
+    .review cite { font-style: normal; font-weight: 800; color: var(--ink); }
+
+    .faq-list { display: grid; gap: .75rem; }
+    .faq-item {
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      overflow: hidden;
+    }
+    .faq-item summary {
+      cursor: pointer; list-style: none;
+      padding: 1.1rem 1.25rem; font-weight: 800;
+      display: flex; justify-content: space-between; gap: 1rem;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: "+"; font-size: 1.3rem; color: var(--coral-deep); font-weight: 500;
+    }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p {
+      margin: 0; padding: 0 1.25rem 1.15rem; color: var(--muted);
+    }
+
+    .cta { padding: 0 0 4.2rem; }
+    .cta-panel {
+      border-radius: 30px;
+      padding: 1.7rem;
+      background:
+        radial-gradient(500px 280px at 100% 0%, rgba(255, 138, 91, 0.28), transparent 60%),
+        linear-gradient(145deg, #27476d 0%, var(--navy) 100%);
+      color: #fffaf6;
+      box-shadow: var(--shadow);
+      display: grid; gap: 1.5rem;
+    }
+    .cta-copy h2 { color: #fffaf6; }
+    .cta-copy p { color: rgba(255, 250, 246, 0.8); margin: 0 0 1rem; }
+    .contact-list {
+      display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none;
+    }
+    .contact-list a { font-weight: 800; color: #ffd1b8; }
+    .contact-list li { color: rgba(255, 250, 246, 0.82); }
+
+    .form {
+      display: grid; gap: .85rem;
+      padding: 1.25rem;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .form label {
+      display: grid; gap: .4rem;
+      font-size: .92rem; font-weight: 800;
+    }
+    .form input,
+    .form select,
+    .form textarea {
+      width: 100%;
+      min-height: 48px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fffaf6;
+      padding: .75rem 1rem;
+    }
+    .form textarea { min-height: 96px; resize: vertical; }
+    .form option { color: var(--ink); }
+    .form-error {
+      margin: 0; color: #ffb4a8; font-size: .92rem; min-height: 1.2em;
+    }
+    .form-success {
+      display: none; margin: 0; color: #b8f0e6; font-size: .92rem;
+    }
+    .form-success.is-visible { display: block; }
+    .form-hint {
+      margin: 0; font-size: .85rem; color: rgba(255, 250, 246, 0.65);
+    }
+
+    .site-footer {
+      padding: 2.5rem 0 3rem;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.35);
+    }
+    .footer-grid { display: grid; gap: 1.5rem; }
+    .site-footer h3 {
+      margin: 0 0 .6rem; font-size: .95rem; text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .site-footer p { margin: 0 0 .45rem; color: var(--muted); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: .7rem 1rem; }
+    .footer-links a { font-weight: 800; color: var(--ink-soft); }
+    .footer-links a:hover { color: var(--coral-deep); }
+
+    .reveal {
+      opacity: 0; transform: translateY(22px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes heroDrift {
+      from { transform: scale(1.04) translate3d(0, 0, 0); }
+      to { transform: scale(1.1) translate3d(-1.5%, -1%, 0); }
+    }
+
+    @media (min-width: 640px) {
+      .directions-grid,
+      .benefits,
+      .hours,
+      .prices-grid,
+      .reviews { grid-template-columns: 1fr 1fr; }
+      .gallery { grid-template-columns: 1.2fr 1fr 1fr; }
+      .gallery figure:first-child {
+        grid-column: auto; grid-row: 1 / span 2; min-height: 100%;
+      }
+      .gallery figure:first-child img,
+      .gallery figure img { min-height: 100%; height: 100%; }
+      .gallery { min-height: 360px; }
+      .teacher { grid-template-columns: auto 1fr; }
+    }
+
+    @media (min-width: 900px) {
+      .nav { display: flex; }
+      .menu-toggle { display: none; }
+      .directions-grid { grid-template-columns: repeat(3, 1fr); }
+      .prices-grid { grid-template-columns: repeat(3, 1fr); }
+      .benefits { grid-template-columns: repeat(4, 1fr); }
+      .cta-panel { grid-template-columns: 1fr 1.05fr; align-items: start; }
+      .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+      .chooser { padding: 2rem; }
+      .hero-inner { padding: 5.5rem 0 4rem; }
+    }
+
+    @media (max-width: 359px) {
+      .container { width: min(100% - 1.25rem, var(--container)); }
+      .brand-signal { font-size: 2.6rem; }
+      .btn { width: 100%; }
+      .hero-actions .btn { width: auto; flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Демо-концепт для студии «Успех», Воронеж. Не официальный сайт. -->
+  <div class="demo-banner">
+    Демонстрационная концепция. <span>Не является официальным сайтом школы</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Успех — наверх">
+        <span class="logo-mark" aria-hidden="true"><span></span></span>
+        <span>Успех</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#directions">Направления</a>
+        <a href="#chooser">Как выбрать</a>
+        <a href="#teachers">Педагог</a>
+        <a href="#prices">Цены</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="#booking">Записаться</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <nav aria-label="Мобильная навигация">
+        <a href="#directions">Направления</a>
+        <a href="#chooser">Как выбрать</a>
+        <a href="#teachers">Педагог</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#booking">Пробное занятие</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Главный экран">
+      <div class="hero-media">
+        <!-- PLACEHOLDER Unsplash: заменить на фото студии / детей на занятии. -->
+        <img
+          src="https://images.unsplash.com/photo-1508807526345-15e9b5f27c3d?auto=format&fit=crop&w=1800&q=80"
+          alt="Дети на танцевальном занятии в зале"
+          fetchpriority="high"
+          width="1800"
+          height="1200">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="brand-signal">Успех</p>
+        <h1>Спортивно-танцевальная студия для детей и взрослых в Воронеже</h1>
+        <p class="hero-lead">
+          Эстрадный танец от 3 лет, ОФП и выступления — плюс аэробика для взрослых.
+          Дружелюбная атмосфера и внимание к каждому ребёнку.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">Записаться на пробное</a>
+          <a class="btn btn-secondary" href="#directions">Смотреть направления</a>
+        </div>
+        <div class="hero-meta">
+          <span class="pill">Пробное — бесплатно</span>
+          <span class="pill">Артамонова, 22Б</span>
+          <span class="pill">Дети от 3 лет и взрослые</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Направления</span>
+          <h2>Чему учимся в студии</h2>
+          <p>Есть детские группы с танцем и физической подготовкой — и отдельный формат для взрослых.</p>
+        </div>
+        <div class="directions-grid">
+          <article class="direction reveal">
+            <h3>Детский эстрадный танец</h3>
+            <p>Группы для детей от 3 лет: музыкальность, координация и первые танцевальные номера в тёплой атмосфере.</p>
+            <div class="tags">
+              <span class="tag">от 3 лет</span>
+              <span class="tag">С нуля</span>
+            </div>
+          </article>
+          <article class="direction reveal">
+            <h3>ОФП и партер</h3>
+            <p>Растяжка, гибкость, подкачка и основы акробатики — чтобы тело держало нагрузку и ребёнку было легче на танце.</p>
+            <div class="tags">
+              <span class="tag">Гибкость</span>
+              <span class="tag">Сила</span>
+            </div>
+          </article>
+          <article class="direction reveal">
+            <h3>Номера и выступления</h3>
+            <p>Разучиваем постановки и выходим на мероприятия — от открытых уроков до концертов и конкурсов.</p>
+            <div class="tags">
+              <span class="tag">Сцена</span>
+              <span class="tag">Концерты</span>
+            </div>
+          </article>
+          <article class="direction reveal">
+            <h3>Аэробика для взрослых</h3>
+            <p>Кардио, работа с мышцами, гантели и фитнес-резинки, плюс развитие гибкости и пластики.</p>
+            <div class="tags">
+              <span class="tag">Взрослые</span>
+              <span class="tag">Вечер</span>
+            </div>
+          </article>
+          <article class="direction reveal">
+            <h3>Индивидуальные занятия</h3>
+            <p>Если нужен свой темп или отдельная подготовка — можно обсудить индивидуальный формат при записи.</p>
+            <div class="tags">
+              <span class="tag">1:1</span>
+              <span class="tag">По запросу</span>
+            </div>
+          </article>
+          <article class="direction reveal">
+            <h3>Творческая жизнь коллектива</h3>
+            <p>Открытые уроки, отчётные концерты, поездки и конкурсы — чтобы у детей была мотивация и общий путь.</p>
+            <div class="tags">
+              <span class="tag">Коллектив</span>
+              <span class="tag">События</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="chooser">
+      <div class="container">
+        <div class="chooser reveal">
+          <span class="eyebrow">Подбор</span>
+          <h2>Как выбрать занятие</h2>
+          <p class="chooser-lead">Отметьте возраст и цель — подскажем, с чего обычно начинают. Группу и время закрепим в переписке.</p>
+          <div class="chooser-groups">
+            <div class="chooser-group">
+              <h3>Для кого</h3>
+              <div class="chips" role="group" aria-label="Возраст">
+                <button class="chip is-active" type="button" data-filter="age" data-value="kids3">Ребёнок 3–5</button>
+                <button class="chip" type="button" data-filter="age" data-value="kids6">Ребёнок 6+</button>
+                <button class="chip" type="button" data-filter="age" data-value="adult">Взрослый</button>
+              </div>
+            </div>
+            <div class="chooser-group">
+              <h3>Цель</h3>
+              <div class="chips" role="group" aria-label="Цель">
+                <button class="chip is-active" type="button" data-filter="goal" data-value="fun">Для удовольствия</button>
+                <button class="chip" type="button" data-filter="goal" data-value="stage">Хотим на сцену</button>
+                <button class="chip" type="button" data-filter="goal" data-value="body">Осанка и гибкость</button>
+              </div>
+            </div>
+            <div class="chooser-group">
+              <h3>Опыт</h3>
+              <div class="chips" role="group" aria-label="Опыт">
+                <button class="chip is-active" type="button" data-filter="level" data-value="zero">С нуля</button>
+                <button class="chip" type="button" data-filter="level" data-value="some">Уже занимались</button>
+              </div>
+            </div>
+          </div>
+          <div class="chooser-result" id="chooser-result" aria-live="polite">
+            <strong>Детский эстрадный танец</strong>
+            В 3–5 лет отлично заходит мягкий старт в группе: музыка, движение и привычка заниматься. Пробное — бесплатно.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Студия</span>
+          <h2>Как у нас устроено</h2>
+          <p>Чтобы и детям было комфортно, и родителям — спокойно ждать рядом.</p>
+        </div>
+        <div class="benefits">
+          <article class="benefit reveal">
+            <h3>Просторный зал</h3>
+            <p>Место, где удобно двигаться группой и отрабатывать номера.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Большая раздевалка</h3>
+            <p>Можно спокойно переодеться до и после занятия.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Зона для родителей</h3>
+            <p>Можно подождать ребёнка прямо в студии.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Вечернее время</h3>
+            <p>Занятия удобно стыкуются с садиком, школой и работой.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teachers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Педагог</span>
+          <h2>Кто ведёт занятия</h2>
+          <p>Руководитель студии совмещает педагогику и ведение коллектива.</p>
+        </div>
+        <article class="teacher reveal">
+          <div class="avatar" aria-hidden="true">КЧ</div>
+          <div>
+            <h3>Кристина Черникова</h3>
+            <p>Руководитель и педагог студии. Кандидат в мастера спорта по художественной гимнастике. По вопросам записи — тот же номер: можно писать и звонить Кристине напрямую.</p>
+            <p style="margin-top:.7rem">
+              <a href="https://vk.com/chrkristina_uspeh" target="_blank" rel="noopener noreferrer">Профиль во ВКонтакте</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="branches">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Адрес</span>
+          <h2>Где нас найти</h2>
+          <p>Один зал в Железнодорожном районе — удобно договариваться о времени заранее.</p>
+        </div>
+        <article class="branch reveal">
+          <h3>Артамонова, 22Б</h3>
+          <p>1 этаж, Воронеж. Занятия по предварительной записи.</p>
+          <p style="margin-top:.7rem">
+            <a href="https://2gis.ru/voronezh/firm/70000001063473308" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Расписание</span>
+          <h2>Когда удобно приходить</h2>
+          <p>Сетка групп обновляется к учебному году — точный слот под возраст лучше взять в переписке.</p>
+        </div>
+        <div class="hours reveal">
+          <article class="hour-card">
+            <h3>Будни</h3>
+            <p>Пн–пт: ориентир 16:00–21:30. Вечерние занятия после садика и школы.</p>
+          </article>
+          <article class="hour-card">
+            <h3>Суббота</h3>
+            <p>13:00–16:30. Дневные слоты — удобно, если будни плотные.</p>
+          </article>
+        </div>
+        <div class="schedule-box reveal" style="margin-top:1rem">
+          <p>Актуальное расписание на учебный год смотрите в меню группы ВКонтакте или просто напишите нам — подскажем группу под возраст.</p>
+          <div class="schedule-actions">
+            <a class="btn btn-tg" href="https://t.me/+79803469875" target="_blank" rel="noopener noreferrer">Узнать расписание в Telegram</a>
+            <a class="btn btn-ghost" href="https://vk.com/topic-152963124_53222144" target="_blank" rel="noopener noreferrer">Смотреть во ВК</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Цены</span>
+          <h2>Сколько стоят занятия</h2>
+          <p>Пробное можно взять бесплатно. Дальше — разовая оплата или абонемент на месяц.</p>
+        </div>
+        <div class="prices-grid">
+          <article class="price-card is-featured reveal">
+            <h3>Пробное занятие</h3>
+            <p class="price-value">0 ₽</p>
+            <p>Первый визит — бесплатно. Посмотрите атмосферу и подойдёт ли группа.</p>
+          </article>
+          <article class="price-card reveal">
+            <h3>Разовое занятие</h3>
+            <p class="price-value">450 ₽</p>
+            <p>Если хотите прийти без абонемента или подстроиться под месяц.</p>
+          </article>
+          <article class="price-card reveal">
+            <h3>Абонемент</h3>
+            <p class="price-value">от 2 400 ₽</p>
+            <p>Есть вариант без пересчёта и вариант с пересчётом пропусков по болезни со справкой и в праздники.</p>
+          </article>
+        </div>
+        <div class="price-note reveal" style="margin-top:1rem">
+          <p>Полный прайс на учебный год лежит во ВКонтакте. Оплата — наличные, перевод на карту или QR. Напишите — подскажем пакет под вашу группу.</p>
+          <div class="price-actions">
+            <a class="btn btn-primary" href="#booking">Записаться и уточнить пакет</a>
+            <a class="btn btn-ghost" href="https://vk.com/topic-152963124_48253530" target="_blank" rel="noopener noreferrer">Смотреть прайс во ВК</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" aria-label="Галерея">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Атмосфера</span>
+          <h2>Движение, сцена и свои маленькие победы</h2>
+          <p>Здесь про занятия, открытые уроки и концерты — ту атмосферу, ради которой родители и остаются.</p>
+        </div>
+        <div class="gallery reveal">
+          <!-- PLACEHOLDER Unsplash: заменить на фото студии «Успех». -->
+          <figure>
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Танцевальное занятие в зале" loading="lazy" width="1200" height="800">
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=900&q=80" alt="Дети готовятся к выступлению" loading="lazy" width="900" height="700">
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=900&q=80" alt="Атмосфера сцены и репетиции" loading="lazy" width="900" height="700">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Отзывы</span>
+          <h2>Что пишут родители</h2>
+          <p>Короткий отзыв из обсуждения студии во ВКонтакте.</p>
+        </div>
+        <div class="reviews">
+          <article class="review reveal">
+            <blockquote>«Девочки, приводите своих деток на занятия! Моему мальчику три года, очень нравится, ходит с удовольствием! Преподаватель очень внимательная, добрая, приходите, не пожалеете!»</blockquote>
+            <footer>
+              <cite>Ольга Лебедева</cite>
+            </footer>
+          </article>
+          <article class="review reveal">
+            <blockquote>«Как здорово))) спасибо большое, что снимаете такие видео, это очень мило»</blockquote>
+            <footer>
+              <cite>Юлия Сибирко</cite>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Частые вопросы перед первым визитом</h2>
+          <p>Коротко по делу. Если чего-то не хватает — напишите Кристине, ответим.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Пробное занятие правда бесплатное?</summary>
+            <p>Да, первое пробное занятие — бесплатно. Дальше можно выбрать разовую оплату или абонемент.</p>
+          </details>
+          <details class="faq-item">
+            <summary>С какого возраста берут детей?</summary>
+            <p>Детский эстрадный танец — от 3 лет. Группу под возраст подскажем при записи.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли прийти без опыта?</summary>
+            <p>Да. Занятия рассчитаны и на новичков: сначала база, движение под музыку и привычка заниматься в группе.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Что взять с собой?</summary>
+            <p>Удобную форму, в которой свободно двигаться, и сменную обувь. Точный список под группу скажем при записи.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как оплачивать и что с пропусками?</summary>
+            <p>Есть абонемент без пересчёта и абонемент с пересчётом: учитываем болезнь со справкой и праздничные нерабочие дни. Оплата — наличные, перевод или QR.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как записаться?</summary>
+            <p>Позвоните или напишите на +7 (980) 346-98-75 — Кристина. Также можно написать в Telegram, WhatsApp, Viber или во ВКонтакте.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="booking">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-copy">
+            <span class="eyebrow">Запись</span>
+            <h2>Запишитесь на бесплатное пробное</h2>
+            <p>Заполните пару полей — откроется Telegram с готовым сообщением. Останется только нажать «отправить».</p>
+            <ul class="contact-list">
+              <li>Телефон: <a href="tel:+79803469875">+7 (980) 346-98-75</a> · Кристина</li>
+              <li>Telegram: <a href="https://t.me/+79803469875" target="_blank" rel="noopener noreferrer">написать</a></li>
+              <li>WhatsApp: <a href="https://wa.me/79803469875" target="_blank" rel="noopener noreferrer">написать</a></li>
+              <li>VK: <a href="https://vk.com/studiouspeh" target="_blank" rel="noopener noreferrer">vk.com/studiouspeh</a></li>
+              <li>Email: <a href="mailto:kristinachernikova.uspeh@mail.ru">kristinachernikova.uspeh@mail.ru</a></li>
+              <li>Адрес: Воронеж, Артамонова, 22Б</li>
+            </ul>
+          </div>
+
+          <form class="form" id="booking-form" novalidate>
+            <label>
+              Имя
+              <input type="text" name="name" autocomplete="name" required placeholder="Как к вам обращаться">
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="+7 (___) ___-__-__">
+            </label>
+            <label>
+              Направление
+              <select name="direction" required>
+                <option value="">Выберите направление</option>
+                <option>Детский эстрадный танец</option>
+                <option>ОФП / растяжка</option>
+                <option>Аэробика для взрослых</option>
+                <option>Индивидуальное занятие</option>
+                <option>Пока не знаю — нужна консультация</option>
+              </select>
+            </label>
+            <label>
+              Возраст ученика
+              <input type="text" name="age" placeholder="Например: 4 года или взрослый">
+            </label>
+            <label>
+              Комментарий
+              <textarea name="comment" rows="3" placeholder="Удобные дни, вопросы по форме или группе"></textarea>
+            </label>
+            <p class="form-error" id="form-error" role="alert"></p>
+            <p class="form-success" id="form-success">Отлично! Сейчас откроется Telegram — отправьте сообщение, и мы ответим.</p>
+            <button class="btn btn-tg btn-full" type="submit">Записаться в Telegram</button>
+            <a class="btn btn-ghost btn-full" href="tel:+79803469875">Или позвонить Кристине</a>
+            <p class="form-hint">Быстрее всего — Telegram или звонок: +7 (980) 346-98-75</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:.6rem">
+          <span class="logo-mark" aria-hidden="true"><span></span></span>
+          <span>Успех</span>
+        </div>
+        <p>Спортивно-танцевальная студия в Воронеже: детская хореография, ОФП и аэробика для взрослых.</p>
+        <p><strong>Демо-концепт. Не официальный сайт студии.</strong></p>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <p><a href="tel:+79803469875">+7 (980) 346-98-75</a></p>
+        <p>Воронеж, Артамонова, 22Б</p>
+        <p>Пн–пт 16:00–21:30 · Сб 13:00–16:30</p>
+      </div>
+      <div>
+        <h3>Соцсети</h3>
+        <div class="footer-links">
+          <a href="https://vk.com/studiouspeh" target="_blank" rel="noopener noreferrer">VK</a>
+          <a href="https://vk.link/studiouspeh" target="_blank" rel="noopener noreferrer">vk.link</a>
+          <a href="https://t.me/+79803469875" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a href="https://wa.me/79803469875" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://2gis.ru/voronezh/firm/70000001063473308" target="_blank" rel="noopener noreferrer">2ГИС</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector(".site-header");
+      var toggle = document.querySelector(".menu-toggle");
+      var mobileNav = document.getElementById("mobile-nav");
+      var form = document.getElementById("booking-form");
+      var formError = document.getElementById("form-error");
+      var formSuccess = document.getElementById("form-success");
+      var filters = { age: "kids3", goal: "fun", level: "zero" };
+
+      var recommendations = {
+        "kids3|fun|zero": {
+          title: "Детский эстрадный танец",
+          text: "В 3–5 лет отлично заходит мягкий старт в группе: музыка, движение и привычка заниматься. Пробное — бесплатно."
+        },
+        "kids3|fun|some": {
+          title: "Детская группа по возрасту",
+          text: "Если ребёнок уже пробовал танцы — подберём группу, где будет и знакомое, и новый материал."
+        },
+        "kids3|stage|zero": {
+          title: "Эстрадный танец + номера",
+          text: "Сначала база и уверенность в зале, потом — первые постановки и выходы на мероприятия."
+        },
+        "kids3|stage|some": {
+          title: "Группа с номерами",
+          text: "Можно целиться в открытые уроки и концерты. Напишите возраст — скажем, какая группа сейчас открыта."
+        },
+        "kids3|body|zero": {
+          title: "ОФП и танец",
+          text: "Растяжка и мягкая физподготовка рядом с танцем — хороший старт, если важны осанка и гибкость."
+        },
+        "kids3|body|some": {
+          title: "ОФП + эстрадный танец",
+          text: "Соберём нагрузку без перегруза: гибкость, сила и привычные танцевальные связки."
+        },
+        "kids6|fun|zero": {
+          title: "Детский эстрадный танец",
+          text: "С 6 лет уже можно увереннее брать технику и более сложные связки. Пробное покажет темп группы."
+        },
+        "kids6|fun|some": {
+          title: "Детская группа 6+",
+          text: "Подстроимся под опыт ребёнка. Напишите, чем занимались раньше — так быстрее найдём группу."
+        },
+        "kids6|stage|zero": {
+          title: "Танец с выступлениями",
+          text: "Если цель — сцена, начнём с базы и постепенно подключим номера и концертную жизнь коллектива."
+        },
+        "kids6|stage|some": {
+          title: "Концертная подготовка",
+          text: "Посмотрим актуальные группы и нагрузку. Для конкурсов и концертов важно попасть в свой возраст и уровень."
+        },
+        "kids6|body|zero": {
+          title: "ОФП + танец",
+          text: "Если хочется осанки и гибкости — ОФП и партерная работа хорошо дополняют танцевальные дни."
+        },
+        "kids6|body|some": {
+          title: "ОФП для танцоров",
+          text: "Подтянем силу и растяжку, чтобы на номерах было легче и безопаснее."
+        },
+        "adult|fun|zero": {
+          title: "Аэробика для взрослых",
+          text: "Кардио, мышцы и гибкость в вечернее время — без требования «уже уметь танцевать»."
+        },
+        "adult|fun|some": {
+          title: "Аэробика",
+          text: "Можно сразу влиться в занятия. Напишите удобные дни — подскажем слот."
+        },
+        "adult|stage|zero": {
+          title: "Аэробика или консультация",
+          text: "Основной взрослый формат у нас — аэробика. Если нужен другой запрос, обсудим индивидуально."
+        },
+        "adult|stage|some": {
+          title: "Индивидуально или аэробика",
+          text: "Для отдельной подготовки можно обсудить индивидуальные занятия. Напишите задачу — ответим честно."
+        },
+        "adult|body|zero": {
+          title: "Аэробика",
+          text: "Сила, кардио и растяжка — как раз про тело. Пробное бесплатное, можно спокойно попробовать."
+        },
+        "adult|body|some": {
+          title: "Аэробика с инвентарём",
+          text: "Гантели, резинки и работа на гибкость. Подскажем, с какого дня удобнее зайти."
+        }
+      };
+
+      function updateChooser() {
+        var key = filters.age + "|" + filters.goal + "|" + filters.level;
+        var result = recommendations[key] || recommendations["kids3|fun|zero"];
+        document.getElementById("chooser-result").innerHTML =
+          "<strong>" + result.title + "</strong>" + result.text;
+      }
+
+      document.querySelectorAll(".chip").forEach(function (chip) {
+        chip.addEventListener("click", function () {
+          var filter = chip.getAttribute("data-filter");
+          filters[filter] = chip.getAttribute("data-value");
+          document.querySelectorAll('.chip[data-filter="' + filter + '"]').forEach(function (el) {
+            el.classList.toggle("is-active", el === chip);
+          });
+          updateChooser();
+        });
+      });
+
+      function setMenuOpen(isOpen) {
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
+        mobileNav.classList.toggle("is-open", isOpen);
+        if (isOpen) mobileNav.removeAttribute("hidden");
+        else mobileNav.setAttribute("hidden", "");
+      }
+
+      toggle.addEventListener("click", function () {
+        setMenuOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+      mobileNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () { setMenuOpen(false); });
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") setMenuOpen(false);
+      });
+      window.addEventListener("scroll", function () {
+        header.classList.toggle("is-scrolled", window.scrollY > 8);
+      }, { passive: true });
+
+      var revealItems = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
+        revealItems.forEach(function (item) { observer.observe(item); });
+      } else {
+        revealItems.forEach(function (item) { item.classList.add("is-visible"); });
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        formError.textContent = "";
+        formSuccess.classList.remove("is-visible");
+
+        var data = new FormData(form);
+        var name = String(data.get("name") || "").trim();
+        var phone = String(data.get("phone") || "").trim();
+        var direction = String(data.get("direction") || "").trim();
+        var age = String(data.get("age") || "").trim();
+        var comment = String(data.get("comment") || "").trim();
+
+        if (!name || !phone || !direction) {
+          formError.textContent = "Заполните имя, телефон и направление.";
+          return;
+        }
+
+        var message =
+          "Здравствуйте! Хочу записаться на пробное занятие в студию «Успех».%0A" +
+          "Имя: " + encodeURIComponent(name) + "%0A" +
+          "Телефон: " + encodeURIComponent(phone) + "%0A" +
+          "Направление: " + encodeURIComponent(direction) +
+          (age ? "%0AВозраст: " + encodeURIComponent(age) : "") +
+          (comment ? "%0AКомментарий: " + encodeURIComponent(comment) : "");
+
+        formSuccess.classList.add("is-visible");
+        window.open("https://t.me/+79803469875?text=" + message, "_blank", "noopener,noreferrer");
+      });
+    })();
+  </script>
+</body>
+</html>
